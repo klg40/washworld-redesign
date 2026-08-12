@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wash World — Автомойка премиум-класса</title>
+  <meta name="description" content="Wash World — сеть автоматических моек самообслуживания и ручной мойки премиум-класса." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#top" class="brand">Wash<span>World</span></a>
+      <ul class="nav-links">
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#pricing">Цены</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+      <a class="btn btn-primary" href="#booking">Записаться</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <h1>Идеальная чистота вашего автомобиля</h1>
+        <p>Автоматические мойки самообслуживания и премиальный ручной уход. Быстро, качественно и доступно.</p>
+        <a class="btn btn-light" href="#services">Смотреть услуги</a>
+      </div>
+    </section>
+
+    <section id="services" class="section container">
+      <h2>Наши услуги</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Мойка самообслуживания</h3>
+          <p>24/7, пена, активная пена, воск, осмос. Доступно в любое время.</p>
+        </article>
+        <article class="card">
+          <h3>Ручная мойка</h3>
+          <p>Деликатный уход вручную с использованием профессиональной косметики.</p>
+        </article>
+        <article class="card">
+          <h3>Детейлинг</h3>
+          <p>Химчистка салона, полировка кузова и глубокая очистка.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="pricing" class="section container">
+      <h2>Цены</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Эконом</h3>
+          <p class="price">500 ₽</p>
+          <ul>
+            <li>Предварительная мойка</li>
+            <li>Основная мойка</li>
+            <li>Осушка</li>
+          </ul>
+        </article>
+        <article class="card featured">
+          <h3>Стандарт</h3>
+          <p class="price">900 ₽</p>
+          <ul>
+            <li>Всё из тарифа Эконом</li>
+            <li>Активная пена</li>
+            <li>Воск</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Комплекс</h3>
+          <p class="price">1 500 ₽</p>
+          <ul>
+            <li>Всё из тарифа Стандарт</li>
+            <li>Детейлинг</li>
+            <li>Химчистка салона</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="booking" class="section container">
+      <h2>Запись на мойку</h2>
+      <form id="booking-form" class="form">
+        <label>
+          Имя
+          <input type="text" name="name" required placeholder="Ваше имя" />
+        </label>
+        <label>
+          Телефон
+          <input type="tel" name="phone" required placeholder="+7 (___) ___-__-__" />
+        </label>
+        <label>
+          Услуга
+          <select name="service">
+            <option value="economy">Эконом</option>
+            <option value="standard" selected>Стандарт</option>
+            <option value="complex">Комплекс</option>
+          </select>
+        </label>
+        <button class="btn btn-primary" type="submit">Отправить заявку</button>
+        <p id="form-status" class="form-status" hidden>Спасибо! Мы свяжемся с вами в ближайшее время.</p>
+      </form>
+    </section>
+
+    <section id="contacts" class="section container">
+      <h2>Контакты</h2>
+      <address>
+        <p>г. Москва, ул. Мойки, д. 1</p>
+        <p><a href="tel:+74950000000">+7 (495) 000-00-00</a></p>
+        <p><a href="mailto:info@washworld.example">info@washworld.example</a></p>
+      </address>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Wash World. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
