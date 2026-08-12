@@ -511,3 +511,219 @@ a:hover {
     font-size: 2.2rem;
   }
 }
+
+/* --------------------------------------------------------------------------
+   Testimonials
+   -------------------------------------------------------------------------- */
+
+.testimonials {
+  background: var(--bg-soft);
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.testimonial {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+
+.testimonial .quote {
+  font-size: 1.05rem;
+  font-style: italic;
+  margin: 0 0 18px;
+  color: var(--ink);
+}
+
+.testimonial footer strong {
+  display: block;
+  font-family: var(--font-head);
+  color: var(--ink);
+}
+
+.testimonial footer span {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* --------------------------------------------------------------------------
+   Contact
+   -------------------------------------------------------------------------- */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: stretch;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 32px;
+}
+
+.contact-info h3 {
+  margin-bottom: 16px;
+}
+
+.contact-list {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+}
+
+.contact-list li {
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--line);
+  color: var(--muted);
+}
+
+.contact-list strong {
+  color: var(--ink);
+}
+
+.contact-note {
+  color: var(--muted);
+  margin: 0 0 20px;
+}
+
+.contact-map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, #0c4a6e 0%, #0ea5e9 100%);
+  color: #ffffff;
+  font-family: var(--font-head);
+  font-weight: 700;
+  min-height: 260px;
+}
+
+/* --------------------------------------------------------------------------
+   Booking dialog
+   -------------------------------------------------------------------------- */
+
+.booking-dialog {
+  border: 0;
+  border-radius: var(--radius);
+  padding: 0;
+  width: min(92vw, 480px);
+  max-height: 90vh;
+  overflow: auto;
+  box-shadow: 0 24px 60px rgba(2, 6, 23, 0.35);
+}
+
+.booking-dialog::backdrop {
+  background: rgba(2, 6, 23, 0.55);
+}
+
+.booking-dialog-inner {
+  padding: 30px;
+  position: relative;
+}
+
+.booking-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--bg-soft);
+  color: var(--ink);
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.booking-dialog h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  padding-right: 40px;
+}
+
+.booking-intro {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0 0 22px;
+}
+
+.booking-form .field {
+  margin-bottom: 16px;
+}
+
+.booking-form label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 12px 14px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
+}
+
+.booking-form input[aria-invalid="true"],
+.booking-form select[aria-invalid="true"] {
+  border-color: #dc2626;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  outline: 2px solid var(--brand);
+  outline-offset: 1px;
+  border-color: var(--brand);
+}
+
+.form-error {
+  color: #dc2626;
+  font-size: 0.9rem;
+  margin: 0 0 16px;
+}
+
+.booking-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.booking-actions .btn {
+  flex: 1 1 auto;
+}
+
+.booking-secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 2px solid var(--line);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive additions
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .testimonial-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
