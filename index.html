@@ -82,20 +82,20 @@
         <h3>Basic</h3>
         <p class="price"><span class="currency">$</span>19</p>
         <ul><li>Express exterior wash</li><li>Hot wax</li><li>Spot-free rinse</li><li>Tire shine</li></ul>
-        <button class="btn btn-outline" data-book>Choose Basic</button>
+        <button class="btn btn-outline" data-book data-service="Express Wash">Choose Basic</button>
       </article>
       <article class="price-card featured">
         <span class="badge">Most Popular</span>
         <h3>Premium</h3>
         <p class="price"><span class="currency">$</span>39</p>
         <ul><li>Everything in Basic</li><li>Interior vacuum &amp; wipe-down</li><li>Wheel deep-clean</li><li>Glass &amp; mirror polish</li></ul>
-        <button class="btn btn-primary" data-book>Choose Premium</button>
+        <button class="btn btn-primary" data-book data-service="Full Detail">Choose Premium</button>
       </article>
       <article class="price-card">
         <h3>Ultimate</h3>
         <p class="price"><span class="currency">$</span>79</p>
         <ul><li>Everything in Premium</li><li>Full interior detail</li><li>Paint polish</li><li>Ceramic topper coat</li></ul>
-        <button class="btn btn-outline" data-book>Choose Ultimate</button>
+        <button class="btn btn-outline" data-book data-service="Ceramic Protection">Choose Ultimate</button>
       </article>
     </div>
     <p class="pricing-note">Members save 15% on every visit. <a href="#contact">Ask about memberships</a></p>
@@ -119,6 +119,96 @@
     </div>
   </div>
 </section>
+
+<section class="testimonials section" id="testimonials">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Reviews</span>
+      <h2>What our customers say</h2>
+      <p>Trusted by thousands of drivers who care about their car.</p>
+    </div>
+    <div class="testimonial-grid">
+      <article class="testimonial">
+        <p class="quote">&ldquo;Best wash in town. My paint looks better than the day I bought it.&rdquo;</p>
+        <footer><strong>Jordan M.</strong><span>5-star review &middot; Premium Detail</span></footer>
+      </article>
+      <article class="testimonial">
+        <p class="quote">&ldquo;Fast, friendly, and the interior came out spotless. Booking was a breeze.&rdquo;</p>
+        <footer><strong>Priya S.</strong><span>5-star review &middot; Valet Service</span></footer>
+      </article>
+      <article class="testimonial">
+        <p class="quote">&ldquo;The ceramic coating has held up through two winters. Worth every penny.&rdquo;</p>
+        <footer><strong>Marcus T.</strong><span>5-star review &middot; Ceramic Protection</span></footer>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Contact</span>
+      <h2>Get in touch</h2>
+      <p>Ask about memberships, locations, or our care packages &mdash; we answer within one business day.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Wash World</h3>
+        <ul class="contact-list">
+          <li><strong>Locations:</strong> Downtown &amp; Riverside Drive</li>
+          <li><strong>Phone:</strong> <a href="tel:+15551234567">(555) 123-4567</a></li>
+          <li><strong>Email:</strong> <a href="mailto:hello@washworld.example">hello@washworld.example</a></li>
+          <li><strong>Hours:</strong> Mon&ndash;Sat, 8am&ndash;7pm</li>
+        </ul>
+        <p class="contact-note">Prefer to skip the phone? Use <strong>Book Now</strong> to prepare a draft booking request that you can save or send yourself.</p>
+        <button class="btn btn-primary" data-book>Book Now</button>
+      </div>
+      <div class="contact-map" role="img" aria-label="Styled map placeholder of Wash World locations">
+        <span>Map view</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<dialog class="booking-dialog" id="booking-dialog" aria-labelledby="booking-title">
+  <div class="booking-dialog-inner">
+    <button type="button" class="booking-close" id="booking-close" aria-label="Close booking dialog">&times;</button>
+    <h2 id="booking-title">Book your visit</h2>
+    <p class="booking-intro">Tell us what you need. This prepares a <strong>draft request</strong> you can save or send yourself&mdash;it is <strong>not a confirmed booking</strong> and nothing is sent to us.</p>
+    <form id="booking-form" class="booking-form" novalidate>
+      <div class="field">
+        <label for="bk-name">Name</label>
+        <input type="text" id="bk-name" name="name" autocomplete="name" required />
+      </div>
+      <div class="field">
+        <label for="bk-contact">Contact</label>
+        <input type="text" id="bk-contact" name="contact" autocomplete="tel" required placeholder="Email or phone number" />
+      </div>
+      <div class="field">
+        <label for="bk-service">Service</label>
+        <select id="bk-service" name="service" required>
+          <option value="">Select a service&hellip;</option>
+          <option>Express Wash</option>
+          <option>Full Detail</option>
+          <option>Ceramic Protection</option>
+          <option>Valet Service</option>
+          <option>Eco Wash</option>
+          <option>Headlight Restoration</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="bk-date">Preferred date</label>
+        <input type="date" id="bk-date" name="date" required />
+      </div>
+      <p class="form-error" id="booking-error" role="alert" hidden></p>
+      <div class="booking-actions">
+        <button type="submit" class="btn btn-primary" id="booking-submit">Save draft (.ics)</button>
+        <button type="button" class="btn btn-outline" id="booking-copy">Copy text</button>
+        <button type="button" class="btn btn-ghost booking-secondary" id="booking-close-secondary">Cancel</button>
+      </div>
+    </form>
+  </div>
+</dialog>
 
 <script src="js/main.js" defer></script>
 </body>
