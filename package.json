@@ -1,0 +1,14 @@
+{
+  "name": "washworld-redesign",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Wash World Premium Car Wash & Detailing site with deterministic build.",
+  "scripts": {
+    "build": "node build.js",
+    "check": "node build.js",
+    "test": "node build.js && node test.js"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
