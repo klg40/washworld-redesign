@@ -1,0 +1,17 @@
+{
+  "name": "washworld-redesign",
+  "version": "1.0.0",
+  "description": "Wash World premium car wash and detailing landing page.",
+  "private": true,
+  "scripts": {
+    "lint": "eslint js/main.js && stylelint \"css/*.css\"",
+    "test": "node --check js/main.js && node scripts/assert-assets.js",
+    "build": "node scripts/assert-assets.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0"
+  },
+  "license": "UNLICENSED"
+}
