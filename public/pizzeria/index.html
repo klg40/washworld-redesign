@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Пиццерия «Маргарита» | Дровяная пицца</title>
+<meta name="description" content="Пиццерия «Маргарита» — настоящая дровяная пицца на тонком тесте, свежие ингредиенты и уютная атмосфера." />
+<meta property="og:title" content="Пиццерия «Маргарита» | Дровяная пицца" />
+<meta property="og:description" content="Дровяная пицца, свежие ингредиенты и тёплый приём каждый день." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="#home" class="brand"><span class="brand-mark">М</span><span class="brand-name">Маргарита</span></a>
+    <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
+      <ul class="nav-list">
+        <li><a href="#menu">Меню</a></li>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#offers">Акции</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+    <button class="btn btn-primary header-cta" data-order>Заказать</button>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <span class="eyebrow">Дровяная пиццерия</span>
+      <h1>Пицца, которая<br />пахнет <span class="brand-accent">домом</span>.</h1>
+      <p class="hero-lead">Тонкое тесто, медленная выпечка в дровяной печи и только свежие ингредиенты. Приходите пообедать или закажите доставку.</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" data-order>Заказать пиццу</button>
+        <a href="#menu" class="btn btn-ghost">Смотреть меню</a>
+      </div>
+      <ul class="hero-stats">
+        <li><strong>24 года</strong><span>печём пиццу</span></li>
+        <li><strong>50k+</strong><span>довольных гостей</span></li>
+        <li><strong>40 мин</strong><span>средняя доставка</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="menu section" id="menu">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Наше меню</span>
+      <h2>Популярные пиццы</h2>
+      <p>Готовим из продуктов, которые выбирают как для себя. Тесто созревает 48 часов.</p>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <div class="card-icon">&#127829;</div>
+        <h3>Маргарита</h3>
+        <p>Томатный соус, моцарелла, свежий базилик, оливковое масло.</p>
+        <p class="card-price">390 ₽</p>
+        <button class="btn btn-outline" data-order data-dish="Маргарита">В заказ</button>
+      </article>
+      <article class="card">
+        <div class="card-icon">&#129365;</div>
+        <h3>Пепперони</h3>
+        <p>Острая колбаса пепперони, сыр, фирменный томатный соус, печёный перец.</p>
+        <p class="card-price">490 ₽</p>
+        <button class="btn btn-outline" data-order data-dish="Пепперони">В заказ</button>
+      </article>
+      <article class="card">
+        <div class="card-icon">&#127795;</div>
+        <h3>Четыре сыра</h3>
+        <p>Моцарелла, горгонзола, пармезан и чеддер на сливочном соусе.</p>
+        <p class="card-price">540 ₽</p>
+        <button class="btn btn-outline" data-order data-dish="Четыре сыра">В заказ</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="offers section" id="offers">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Акции</span>
+      <h2>Выгодно и вкусно</h2>
+      <p>Дарим бонусы постоянным гостям и скидки на большие заказы.</p>
+    </div>
+    <div class="offer-grid">
+      <article class="offer-card">
+        <h3>Две пиццы — третья в подарок</h3>
+        <p>При заказе двух больших пицц на вынос бесплатно забирайте третью.</p>
+      </article>
+      <article class="offer-card">
+        <h3>−20% в будни до 15:00</h3>
+        <p>Обедайте у нас по будням до трёх часов дня и экономьте на каждом заказе.</p>
+      </article>
+      <article class="offer-card">
+        <h3>Бесплатная доставка от 1500 ₽</h3>
+        <p>Доставим заказ горячим в течение 40 минут без оплаты доставки.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="about section" id="about">
+  <div class="container about-grid">
+    <div class="about-media"><div class="about-badge">С 2002 года</div></div>
+    <div class="about-content">
+      <span class="eyebrow">О пиццерии</span>
+      <h2>Рецепт, который<br />жжется в печи.</h2>
+      <p>«Маргарита» начиналась с одной дровяной печи на углу улицы. Сегодня у нас три зала и своя доставка, но тесто мы по-прежнему замешиваем вручную каждое утро.</p>
+      <ul class="check-list">
+        <li>Дровяная печь на 450 °C</li>
+        <li>Ингредиенты от проверенных фермеров</li>
+        <li>Собственная доставка без посредников</li>
+        <li>Уютный зал и открытая кухня</li>
+      </ul>
+      <a href="#contact" class="btn btn-primary">Наш адрес</a>
+    </div>
+  </div>
+</section>
+
+<section class="reviews section" id="reviews">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Отзывы</span>
+      <h2>Что говорят гости</h2>
+      <p>Нам доверяют обеды, праздники и вечерние посиделки.</p>
+    </div>
+    <div class="review-grid">
+      <article class="review">
+        <p class="quote">&laquo;Пепперони как в Неаполе. Корка тонкая, хрустящая, томаты чувствуются.&raquo;</p>
+        <footer><strong>Анна В.</strong><span>постоянный гость</span></footer>
+      </article>
+      <article class="review">
+        <p class="quote">&laquo;Заказывали на юбилей коллеге — привезли горячей и точно в срок.&raquo;</p>
+        <footer><strong>Дмитрий К.</strong><span>доставка</span></footer>
+      </article>
+      <article class="review">
+        <p class="quote">&laquo;Самый вкусный «Четыре сыра» в городе. Обязательно вернёмся.&raquo;</p>
+        <footer><strong>Марина П.</strong><span>выезд семьёй</span></footer>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Контакты</span>
+      <h2>Ждём вас в гости</h2>
+      <p>Ответим на вопросы о брони, доставке и заказе столиков.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Пиццерия «Маргарита»</h3>
+        <ul class="contact-list">
+          <li><strong>Адрес:</strong> ул. Пирогова, 12</li>
+          <li><strong>Телефон:</strong> <a href="tel:+15552345678">(555) 234-5678</a></li>
+          <li><strong>Почта:</strong> <a href="mailto:hi@pizzamargherita.example">hi@pizzamargherita.example</a></li>
+          <li><strong>Часы:</strong> ежедневно 11:00–23:00</li>
+        </ul>
+        <p class="contact-note">Кнопка «Заказать» собирает домашний черновик заказа в файл календаря или в текст — ничего не отправляется в интернет.</p>
+        <button class="btn btn-primary" data-order>Заказать</button>
+      </div>
+      <div class="contact-map" role="img" aria-label="Схема проезда к пиццерии «Маргарита»">
+        <span>Схема проезда</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<dialog class="order-dialog" id="order-dialog" aria-labelledby="order-title">
+  <div class="order-dialog-inner">
+    <button type="button" class="order-close" id="order-close" aria-label="Закрыть окно заказа">&times;</button>
+    <h2 id="order-title">Оформить заказ</h2>
+    <p class="order-intro">Заполните данные — это создаст <strong>черновик заказа</strong> (.ics или текст), который вы можете сохранить или отправить себе. Обратите внимание: это <strong>не подтверждённый заказ</strong>, данные никуда не отправляются.</p>
+    <form id="order-form" class="order-form" novalidate>
+      <div class="field">
+        <label for="or-name">Имя</label>
+        <input type="text" id="or-name" name="name" autocomplete="name" required />
+      </div>
+      <div class="field">
+        <label for="or-contact">Контакт</label>
+        <input type="text" id="or-contact" name="contact" autocomplete="tel" required placeholder="Почта или телефон" />
+      </div>
+      <div class="field">
+        <label for="or-dish">Пицца</label>
+        <select id="or-dish" name="dish" required>
+          <option value="">Выберите пиццу&hellip;</option>
+          <option>Маргарита</option>
+          <option>Пепперони</option>
+          <option>Четыре сыра</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="or-date">К какому дню</label>
+        <input type="date" id="or-date" name="date" required />
+      </div>
+      <p class="form-error" id="order-error" role="alert" hidden></p>
+      <div class="order-actions">
+        <button type="submit" class="btn btn-primary" id="order-submit">Черновик (.ics)</button>
+        <button type="button" class="btn btn-outline" id="order-copy">Скопировать текст</button>
+        <button type="button" class="btn btn-ghost order-secondary" id="order-close-secondary">Отмена</button>
+      </div>
+    </form>
+  </div>
+</dialog>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
