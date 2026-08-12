@@ -1,0 +1,5 @@
+# Generated build artifact (produced by `npm run build`)
+public/
+
+# Dependencies
+node_modules/
